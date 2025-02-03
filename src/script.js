@@ -8,10 +8,10 @@ const { default: axios } = require("axios");
             const locationURL = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${pos.coords.latitude}&lon=${pos.coords.longitude}`;
 
             const fetchWeather = async () => await axios.get(weatherURL);
-            const fetchReadableLocation = async (lat, long) => await axios.get(locationURL);
+            const fetchReadableLocation = async () => await axios.get(locationURL);
 
             const { data } = await fetchWeather();
-            const location = await fetchReadableLocation(pos.coords.latitude, pos.coords.longitude).then(res => res.data)
+            const location = await fetchReadableLocation().then(res => res.data)
             weather.innerHTML = `${location.address.country}, ${location.address.county}: 
             ${data}`
         });
