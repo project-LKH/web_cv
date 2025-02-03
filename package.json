@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1"
+  },
+  "name": "web_cv",
+  "version": "1.0.0",
+  "description": "A web based resume using HTML and vanilla CSS",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build":"npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-LKH/web_cv.git"
+  },
+  "keywords": [],
+  "author": "Liam Henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/project-LKH/web_cv/issues"
+  },
+  "homepage": "https://github.com/project-LKH/web_cv#readme"
+}
