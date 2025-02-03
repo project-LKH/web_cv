@@ -16,7 +16,7 @@ const { default: axios } = require("axios");
             ${data}`
         });
     } else {
-        weather.innerHTML = "Geolocation is not supported by this browser.";
+        weather.innerHTML = "Could not verify geolocation";
     }
 })()
 
