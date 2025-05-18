@@ -108,7 +108,12 @@ h2 {
 
 .skill:hover {
     transform: scale(1.05);
-    background-color: #ff0000;
+    /* background-color: #ff0000; */
+}
+
+span>a{
+    text-decoration: none;
+    color:white;
 }
 
 /* Experience and Education Styles */
